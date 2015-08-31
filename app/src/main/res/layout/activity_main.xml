@@ -6,6 +6,26 @@
     android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
 
     <TextView android:text="@string/hello_world" android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:id="@+id/file_name"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/pick_file" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose File..."
+        android:id="@+id/pick_file"
+        android:layout_below="@+id/file_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="47dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/file_name"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/file_extention"
+        android:hint="Enter File Extention" />
 
 </RelativeLayout>
